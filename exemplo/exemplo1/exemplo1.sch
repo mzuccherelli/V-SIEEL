@@ -1,0 +1,102 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Exemplo1"
+Date "01/10/2019"
+Rev "V1.0"
+Comp "Autor: Matheus Z"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5D93A5D2
+P 2700 3300
+F 0 "R?" H 2630 3254 50  0000 R CNN
+F 1 "510K" H 2630 3345 50  0000 R CNN
+F 2 "" V 2630 3300 50  0001 C CNN
+F 3 "~" H 2700 3300 50  0001 C CNN
+	1    2700 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D93B90E
+P 2950 3800
+F 0 "#PWR?" H 2950 3550 50  0001 C CNN
+F 1 "GND" H 2955 3627 50  0000 C CNN
+F 2 "" H 2950 3800 50  0001 C CNN
+F 3 "" H 2950 3800 50  0001 C CNN
+	1    2950 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2SC1815 Q?
+U 1 1 5D93F95F
+P 3050 2800
+F 0 "Q?" H 3240 2846 50  0000 L CNN
+F 1 "2SC1815" H 3240 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3250 2725 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf" H 3050 2800 50  0001 L CNN
+	1    3050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D93B7A9
+P 2450 2800
+F 0 "R?" V 2657 2800 50  0000 C CNN
+F 1 "1K" V 2566 2800 50  0000 C CNN
+F 2 "" V 2380 2800 50  0001 C CNN
+F 3 "~" H 2450 2800 50  0001 C CNN
+	1    2450 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D9426D8
+P 3150 3200
+F 0 "R?" H 3080 3154 50  0000 R CNN
+F 1 "10K" H 3080 3245 50  0000 R CNN
+F 2 "" V 3080 3200 50  0001 C CNN
+F 3 "~" H 3150 3200 50  0001 C CNN
+	1    3150 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 2800 2700 2800
+Wire Wire Line
+	2700 2800 2700 3150
+Connection ~ 2700 2800
+Wire Wire Line
+	2700 2800 2850 2800
+$Comp
+L Device:C C?
+U 1 1 5D944C37
+P 1900 2800
+F 0 "C?" V 1648 2800 50  0000 C CNN
+F 1 "20n" V 1739 2800 50  0000 C CNN
+F 2 "" H 1938 2650 50  0001 C CNN
+F 3 "~" H 1900 2800 50  0001 C CNN
+	1    1900 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 3450 2950 3450
+Wire Wire Line
+	2950 3450 2950 3800
+Wire Wire Line
+	3150 3450 2950 3450
+Connection ~ 2950 3450
+Wire Wire Line
+	3150 3000 3150 3050
+Wire Wire Line
+	3150 3350 3150 3450
+Wire Wire Line
+	2050 2800 2300 2800
+$EndSCHEMATC
